@@ -8,158 +8,226 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/menu.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
 </head>
 <body>
-    <!-- Main Content -->
-    <main>
-        <!-- Maki Section -->
-        <section class="menu-section">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+<div class="bg_shadow"></div>
+
+<div class="main_container">
+    <section class="mt-2">
+        <div class="navbar_container">
+            <div class="navbar_sub_container">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a class="custom-navbar-brand" href="frontpage.html">QITCHEN</a>
+                        <button class="navbar-toggler custom_navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <a class="custom-nav-link" href="menu.html">MENU</a>
+                                <a class="custom-nav-link" href="about.html">ABOUT</a>
+                                <button class="nav_button">
+                                    <a class="custom-nav-link" href="reservation.html">BOOK A TABLE</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Maki Section -->
+    <section class="menu-section">
+        <div class="title_container">
+            <img class="title_line_left" src="/assets/menu_assets/title_line.svg" alt="Title Line">
             <h2>MAKI</h2>
-            <div class="menu-items">
-                <div class="menu-item">
-                    <img src="assets/menu_assets/spicy-tuna-maki.png" alt="Spicy Tuna Maki">
-                    <div class="description">
-                        <h3>SPICY TUNA MAKI</h3>
-                        <p>A tantalizing blend of spicy tuna, cucumber, and avocado harmoniously rolled in rice.</p>
-                    </div>
-                    <span class="price">$5</span>
+            <img class="title_line" src="/assets/menu_assets/title_line.svg" alt="Title Line">
+        </div>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="assets/menu_assets/spicy-tuna-maki.png" alt="Spicy Tuna Maki">
+                <div class="description">
+                    <h3>SPICY TUNA MAKI</h3>
+                    <p>A tantalizing blend of spicy tuna, cucumber, and avocado harmoniously rolled in rice.</p>
                 </div>
-                <div class="menu-item">
-                    <img src="assets/menu_assets/mango-maki.png" alt="Mango Maki">
-                    <div class="description">
-                        <h3>MANGO MAKI</h3>
-                        <p>Tempura-fried shrimp, cucumber, and cream cheese embrace a center of fresh avocado, delivering a satisfying contrast of textures.</p>
-                    </div>
-                    <span class="price">$5</span>
-                </div>
-                <div class="menu-item">
-                    <img src="assets/menu_assets/solmon-maki.png" alt="Mango Maki">
-                    <div class="description">
-                        <h3>SOLMON MAKI</h3>
-                        <p>Shiitake mushrooms, avocado, and pickled daikon radish nestle within a roll of seasoned rice, coated with nutty sesame seeds.</p>
-                    </div>
-                    <span class="price">$5</span>
-                </div>
-                <div class="menu-item">
-                    <img src="assets/menu_assets/tuna-maki.png" alt="Mango Maki">
-                    <div class="description">
-                        <h3>TUNA MAKI</h3>
-                        <p>A vibrant assortment of julienned carrots, bell peppers, and cucumber, tightly encased in a nori-wrapped rice roll.</p>
-                    </div>
-                    <span class="price">$5</span>
-                </div>
-                
+                <span class="price">$5</span>
             </div>
-        </section>
+            <div class="menu-item">
+                <img src="assets/menu_assets/mango-maki.png" alt="Mango Maki">
+                <div class="description">
+                    <h3>MANGO MAKI</h3>
+                    <p>Tempura-fried shrimp, cucumber, and cream cheese embrace a center of fresh avocado, delivering a
+                        satisfying contrast of textures.</p>
+                </div>
+                <span class="price">$5</span>
+            </div>
+            <div class="menu-item">
+                <img src="assets/menu_assets/solmon-maki.png" alt="Mango Maki">
+                <div class="description">
+                    <h3>SOLMON MAKI</h3>
+                    <p>Shiitake mushrooms, avocado, and pickled daikon radish nestle within a roll of seasoned rice,
+                        coated with nutty sesame seeds.</p>
+                </div>
+                <span class="price">$5</span>
+            </div>
+            <div class="menu-item">
+                <img src="assets/menu_assets/tuna-maki.png" alt="Mango Maki">
+                <div class="description">
+                    <h3>TUNA MAKI</h3>
+                    <p>A vibrant assortment of julienned carrots, bell peppers, and cucumber, tightly encased in a
+                        nori-wrapped rice roll.</p>
+                </div>
+                <span class="price">$5</span>
+            </div>
 
-        <!-- Uramaki Section -->
-        <section class="menu-section">
+        </div>
+    </section>
+
+    <!-- Uramaki Section -->
+    <section class="menu-section">
+        <div class="title_container">
+            <img class="title_line_left" src="/assets/menu_assets/title_line.svg" alt="Title Line">
             <h2>URAMAKI</h2>
-            <div class="menu-items">
-                <div class="menu-item">
-                    <img src="assets/menu_assets/valcano-delight.png" alt="Volcano Delight">
-                    <div class="description">
-                        <h3>VOLCANO DELIGHT</h3>
-                        <p>Creamy crab salad, avocado, and cucumber rolled inside, topped with spicy tuna and drizzled with fiery sriracha sauce.</p>
-                    </div>
-                    <span class="price">$12</span>
-                </div>
-                <div class="menu-item">
-                    <img src="assets/menu_assets/rainbow-fusion.png" alt="Volcano Delight">
-                    <div class="description">
-                        <h3>RAINBOW FUSION</h3>
-                        <p>A colorful blend of fresh tuna, salmon, yellowtail, and avocado, enveloping a core of cucumber and crab stick.</p>
-                    </div>
-                    <span class="price">$12</span>
-                </div>
-                <div class="menu-item">
-                    <img src="assets/menu_assets/dragon-elegance.png" alt="Volcano Delight">
-                    <div class="description">
-                        <h3>DRAGON ELEGANCE</h3>
-                        <p>Grilled eel and avocado nestled within the roll, draped with slices of ripe avocado resembling dragon scales.</p>
-                    </div>
-                    <span class="price">$12</span>
-                </div><div class="menu-item">
-                    <img src="assets/menu_assets/sunset-serenity.png" alt="Volcano Delight">
-                    <div class="description">
-                        <h3>SUNSET SERENITY</h3>
-                        <p>Tempura shrimp, cucumber, and spicy mayo embraced by a roll of soy paper, crowned with slices of creamy mango.</p>
-                    </div>
-                    <span class="price">$12</span>
-                </div><div class="menu-item">
-                    <img src="assets/menu_assets/mystic-garden.png" alt="Volcano Delight">
-                    <div class="description">
-                        <h3>MYSTIC GARDEN</h3>
-                        <p>Shiitake mushrooms, asparagus, and cucumber intermingle with crispy tempura bits, blanketed by a layer of sesame seeds.</p>
-                    </div>
-                    <span class="price">$12</span>
-                </div><div class="menu-item">
-                    <img src="assets/menu_assets/ocean-breeze.png" alt="Volcano Delight">
-                    <div class="description">
-                        <h3>OCEAN BREEZE</h3>
-                        <p>A medley of fresh shrimp, crab stick, and avocado, laced with a gentle touch of zesty yuzu-infused tobiko.</p>
-                    </div>
-                    <span class="price">$12</span>
-                </div><div class="menu-item">
-                    <img src="assets/menu_assets/tokyo-blossom.png" alt="Volcano Delight">
-                    <div class="description">
-                        <h3>TOKYO BLOSSOM</h3>
-                        <p>Delicate pink soy paper envelopes a blend of tuna, crab stick, and cucumber, embellished with edible flower petals.</p>
-                    </div>
-                    <span class="price">$12</span>
-                </div>
-                
-            </div>
-        </section>
+            <img class="title_line" src="/assets/menu_assets/title_line.svg" alt="Title Line">
+        </div>
 
-        <!-- Special Rolls Section -->
-        <section class="menu-section">
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="assets/menu_assets/valcano-delight.png" alt="Volcano Delight">
+                <div class="description">
+                    <h3>VOLCANO DELIGHT</h3>
+                    <p>Creamy crab salad, avocado, and cucumber rolled inside, topped with spicy tuna and drizzled with
+                        fiery sriracha sauce.</p>
+                </div>
+                <span class="price">$12</span>
+            </div>
+            <div class="menu-item">
+                <img src="assets/menu_assets/rainbow-fusion.png" alt="Volcano Delight">
+                <div class="description">
+                    <h3>RAINBOW FUSION</h3>
+                    <p>A colorful blend of fresh tuna, salmon, yellowtail, and avocado, enveloping a core of cucumber
+                        and crab stick.</p>
+                </div>
+                <span class="price">$12</span>
+            </div>
+            <div class="menu-item">
+                <img src="assets/menu_assets/dragon-elegance.png" alt="Volcano Delight">
+                <div class="description">
+                    <h3>DRAGON ELEGANCE</h3>
+                    <p>Grilled eel and avocado nestled within the roll, draped with slices of ripe avocado resembling
+                        dragon scales.</p>
+                </div>
+                <span class="price">$12</span>
+            </div>
+            <div class="menu-item">
+                <img src="assets/menu_assets/sunset-serenity.png" alt="Volcano Delight">
+                <div class="description">
+                    <h3>SUNSET SERENITY</h3>
+                    <p>Tempura shrimp, cucumber, and spicy mayo embraced by a roll of soy paper, crowned with slices of
+                        creamy mango.</p>
+                </div>
+                <span class="price">$12</span>
+            </div>
+            <div class="menu-item">
+                <img src="assets/menu_assets/mystic-garden.png" alt="Volcano Delight">
+                <div class="description">
+                    <h3>MYSTIC GARDEN</h3>
+                    <p>Shiitake mushrooms, asparagus, and cucumber intermingle with crispy tempura bits, blanketed by a
+                        layer of sesame seeds.</p>
+                </div>
+                <span class="price">$12</span>
+            </div>
+            <div class="menu-item">
+                <img src="assets/menu_assets/ocean-breeze.png" alt="Volcano Delight">
+                <div class="description">
+                    <h3>OCEAN BREEZE</h3>
+                    <p>A medley of fresh shrimp, crab stick, and avocado, laced with a gentle touch of zesty
+                        yuzu-infused tobiko.</p>
+                </div>
+                <span class="price">$12</span>
+            </div>
+            <div class="menu-item">
+                <img src="assets/menu_assets/tokyo-blossom.png" alt="Volcano Delight">
+                <div class="description">
+                    <h3>TOKYO BLOSSOM</h3>
+                    <p>Delicate pink soy paper envelopes a blend of tuna, crab stick, and cucumber, embellished with
+                        edible flower petals.</p>
+                </div>
+                <span class="price">$12</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Special Rolls Section -->
+    <section class="menu-section">
+        <div class="title_container">
+            <img class="title_line_left" src="/assets/menu_assets/title_line.svg" alt="Title Line">
             <h2>SPECIAL ROLLS</h2>
-            <div class="menu-items">
-                <div class="menu-item">
-                    <img src="assets/menu_assets/sunrise-bliss.png" alt="Sunrise Bliss">
-                    <div class="description">
-                        <h3>SUNRISE BLISS</h3>
-                        <p>A delicate combination of fresh salmon, cream cheese, and asparagus, rolled in orange-hued tobiko for a burst of sunrise-inspired flavors.</p>
-                    </div>
-                    <span class="price">$16</span>
-                </div>
-                <div class="menu-item">
-                    <img src="assets/menu_assets/mango-tango-fusion.png" alt="Volcano Delight">
-                    <div class="description">
-                        <h3>MANGO TANGO FUSION</h3>
-                        <p>Tempura shrimp, cucumber, and avocado dance alongside sweet mango slices, drizzled with a tangy mango sauce.</p>
-                    </div>
-                    <span class="price">$16</span>
-                </div><div class="menu-item">
-                    <img src="assets/menu_assets/truffle indulgence.png" alt="Volcano Delight">
-                    <div class="description">
-                        <h3>TRUFFLE INDULGENCE</h3>
-                        <p>Decadent slices of black truffle grace a roll of succulent wagyu beef, cucumber, and microgreens, culminating in an exquisite umami symphony.</p>
-                    </div>
-                    <span class="price">$16</span>
-                </div><div class="menu-item">
-                    <img src="assets/menu_assets/pacific-firecracker.png" alt="Volcano Delight">
-                    <div class="description">
-                        <h3>PACIFIC FIRECRACKER</h3>
-                        <p>Spicy crab salad, tempura shrimp, and jalapeño peppers combine in a fiery ensemble, accented with a chili-infused aioli.</p>
-                    </div>
-                    <span class="price">$16</span>
-                </div><div class="menu-item">
-                    <img src="assets/menu_assets/eternal-eel-enchantment.png" alt="Volcano Delight">
-                    <div class="description">
-                        <h3>ETERNAL EEL ENCHANTMENT</h3>
-                        <p>An enchanting blend of eel tempura, foie gras, and cucumber, elegantly layered with truffle oil and gold leaf for a touch of opulence.</p>
-                    </div>
-                    <span class="price">$16</span>
-                </div>
-            </div>
-        </section>
-    </main>
+            <img class="title_line" src="/assets/menu_assets/title_line.svg" alt="Title Line">
+        </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2024 BORA TUM HAKLARI SAKLIDIR</p>
-    </footer>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="assets/menu_assets/sunrise-bliss.png" alt="Sunrise Bliss">
+                <div class="description">
+                    <h3>SUNRISE BLISS</h3>
+                    <p>A delicate combination of fresh salmon, cream cheese, and asparagus, rolled in orange-hued tobiko
+                        for a burst of sunrise-inspired flavors.</p>
+                </div>
+                <span class="price">$16</span>
+            </div>
+            <div class="menu-item">
+                <img src="assets/menu_assets/mango-tango-fusion.png" alt="Volcano Delight">
+                <div class="description">
+                    <h3>MANGO TANGO FUSION</h3>
+                    <p>Tempura shrimp, cucumber, and avocado dance alongside sweet mango slices, drizzled with a tangy
+                        mango sauce.</p>
+                </div>
+                <span class="price">$16</span>
+            </div>
+            <div class="menu-item">
+                <img src="assets/menu_assets/truffle indulgence.png" alt="Volcano Delight">
+                <div class="description">
+                    <h3>TRUFFLE INDULGENCE</h3>
+                    <p>Decadent slices of black truffle grace a roll of succulent wagyu beef, cucumber, and microgreens,
+                        culminating in an exquisite umami symphony.</p>
+                </div>
+                <span class="price">$16</span>
+            </div>
+            <div class="menu-item">
+                <img src="assets/menu_assets/pacific-firecracker.png" alt="Volcano Delight">
+                <div class="description">
+                    <h3>PACIFIC FIRECRACKER</h3>
+                    <p>Spicy crab salad, tempura shrimp, and jalapeño peppers combine in a fiery ensemble, accented with
+                        a chili-infused aioli.</p>
+                </div>
+                <span class="price">$16</span>
+            </div>
+            <div class="menu-item">
+                <img src="assets/menu_assets/eternal-eel-enchantment.png" alt="Volcano Delight">
+                <div class="description">
+                    <h3>ETERNAL EEL ENCHANTMENT</h3>
+                    <p>An enchanting blend of eel tempura, foie gras, and cucumber, elegantly layered with truffle oil
+                        and gold leaf for a touch of opulence.</p>
+                </div>
+                <span class="price">$16</span>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p class="m-0">© 2024 </p>
+</footer>
 </body>
 </html>
