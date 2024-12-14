@@ -16,7 +16,7 @@
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
 <div class="d-flex flex-wrap main_container">
-    <div class="col-12 col-md-6 col-lg-9">
+    <div class="col-12 col-md-8 col-lg-9 left_container">
         <div class="banner_image_container">
             <img class="banner_image" src="assets/main_banner.png" alt="main_banner">
             <div class="main_banner_shadow"></div>
@@ -69,9 +69,9 @@
         </div>
     </div>
 
-    <div class="col-12 col-md-6 col-lg-3">
-        <div class="d-flex flex-column banner_image_container gap-16px">
-            <div class="banner_image_sub_container">
+    <div class="col-12 col-md-4 col-lg-3">
+        <div class="d-flex flex-column banner_image_container mobile_container gap-16px">
+            <div class="banner_image_sub_container hide-mobile">
                 <img class="banner_image" src="assets/menu.png" alt="menu">
                 <div class="main_banner_shadow"></div>
                 <div class="position-relative">
@@ -85,7 +85,7 @@
                     </div>
                 </div>
             </div>
-            <div class="banner_image_sub_container">
+            <div class="banner_image_sub_container hide-mobile">
                 <img class="banner_image" src="assets/reservation.png" alt="reservation">
                 <div class="main_banner_shadow"></div>
                 <div class="position-relative">
@@ -99,13 +99,13 @@
                     </div>
                 </div>
             </div>
-            <div class="banner_image_sub_container">
+            <div class="banner_image_sub_container hide-mobile">
                 <img class="banner_image" src="assets/about.png" alt="about">
                 <div class="main_banner_shadow"></div>
                 <div class="position-relative">
                     <div class="banner_button_container">
                         <button class="banner_button">
-                            OUR RESTAURANT
+                            ABOUT
                             <div class="social_media_badge">
                                 <img src="assets/arrow.svg" class="social_media_icon" alt="menu">
                             </div>
@@ -113,6 +113,68 @@
                     </div>
                 </div>
             </div>
+
+            <div id="carousel" class="carousel slide hide-desktop">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="banner_image_sub_container">
+                            <img class="banner_image" src="assets/menu.png" alt="menu">
+                            <div class="main_banner_shadow"></div>
+                            <div class="position-relative">
+                                <div class="banner_button_container">
+                                    <button class="banner_button">
+                                        MENU
+                                        <div class="social_media_badge">
+                                            <img src="assets/arrow.svg" class="social_media_icon" alt="menu">
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="banner_image_sub_container">
+                            <img class="banner_image" src="assets/reservation.png" alt="reservation">
+                            <div class="main_banner_shadow"></div>
+                            <div class="position-relative">
+                                <div class="banner_button_container">
+                                    <button class="banner_button">
+                                        RESERVATION
+                                        <div class="social_media_badge">
+                                            <img src="assets/arrow.svg" class="social_media_icon" alt="menu">
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="banner_image_sub_container">
+                            <img class="banner_image" src="assets/about.png" alt="about">
+                            <div class="main_banner_shadow"></div>
+                            <div class="position-relative">
+                                <div class="banner_button_container">
+                                    <button class="banner_button">
+                                        ABOUT
+                                        <div class="social_media_badge">
+                                            <img src="assets/arrow.svg" class="social_media_icon" alt="menu">
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
         </div>
     </div>
 </div>

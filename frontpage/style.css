@@ -16,7 +16,7 @@
 
 .title_container {
     position: absolute;
-    bottom: 5%;
+    bottom: 8%;
     left: 4%;
 }
 
@@ -40,14 +40,20 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+    transition: filter 0.3s ease, transform 0.3s ease;
 }
+
+.banner_image:hover {
+    filter: brightness(0.9);
+    transform: scale(1.02);
+}
+
 
 .banner_image_sub_container {
     height: calc((100dvh - 32px) / 3);
     overflow: hidden;
     border-radius: 16px;
     position: relative;
-
 }
 
 .banner_image_container {
@@ -199,4 +205,51 @@
 
 .navbar-nav{
     row-gap: 13px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    height: fit-content;
+    align-self: center;
+}
+
+@media only screen and (max-width: 992px) {
+    .navbar_sub_container {
+        width: 100%;
+    }
+
+    .title{
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .banner_image_sub_container {
+        height: calc((100dvh - 32px) / 2);
+    }
+
+    .hide-mobile {
+        display: none;
+    }
+
+    .navbar_sub_container {
+        width: 100%;
+    }
+
+    .left_container {
+        padding-bottom: 16px;
+    }
+
+    .banner_image_container {
+        margin-right: 0;
+    }
+
+    .mobile_container {
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .hide-desktop {
+        display: none;
+    }
 }
