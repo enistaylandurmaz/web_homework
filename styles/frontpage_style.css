@@ -96,12 +96,18 @@
 }
 
 .banner_button {
-    color: #EFE7D2;
-    font-family: "Forum", serif;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: 3px;
-    font-size: 20px;
+    a{
+        color: #EFE7D2;
+        text-decoration: none;
+        font-family: "Forum", serif;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 3px;
+        line-height: 35px;
+        font-size: 20px;
+        align-items: center;
+        display: flex;
+    }
     text-decoration: none;
     display: flex;
     gap: 4px;
@@ -113,12 +119,13 @@
     height: 100px;
     justify-content: end;
     align-items: self-end;
-    line-height: 35px;
     padding-right: 15px;
 }
 
 .banner_button:hover {
-    color: #dcdbdb;
+    a{
+        color: #dcdbdb;
+    }
 }
 
 .banner_button_container {
