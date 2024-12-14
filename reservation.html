@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservation Page</title>
+  <link rel="stylesheet" href="reservation.css">
+  <link href="https://fonts.googleapis.com/css2?family=Forum&family=Satoshi:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="reservation">
+    <div class="main-wrapper">
+      <div class="image-wrapper">
+        <div class="gradient"></div>
+        <h1 class="book-title">Book a Table</h1>
+      </div>
+
+      <div class="content-wrapper">
+        <div class="form-header">
+          <h2 class="reservation-title">Reservation</h2>
+          <p class="reservation-description">
+            Secure your spot at Qitchen, where exceptional sushi and a remarkable dining experience await.
+          </p>
+        </div>
+        <form class="reservation-form">
+            <input type="text" placeholder="Name" required>
+            <input type="tel" placeholder="Phone Number" required>
+            <input type="email" placeholder="Email" required>
+            <div class="row">
+              <input type="number" placeholder="Guests" required>
+              <input type="date" required>
+              <input type="time" required>
+            </div>
+            <button type="submit">Reserve</button>
+          </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
