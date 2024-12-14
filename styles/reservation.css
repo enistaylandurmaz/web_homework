@@ -33,7 +33,7 @@
     width: 100%;
     max-width: 1872px;
     height: 100vh;
-    background: url('images/background.png') no-repeat center center;
+    background: url('../assets/reservation_assets/background.png') no-repeat center center;
     border-radius: 0 48px 48px 0;
     overflow: hidden;
   }
@@ -43,7 +43,7 @@
     width: 50%;
     max-width: 928px;
     height: 100%;
-    background: url('images/image.png') no-repeat center center;
+    background: url('../assets/reservation_assets/image.png') no-repeat center center;
     background-size: cover;
     z-index: 1;
   }
