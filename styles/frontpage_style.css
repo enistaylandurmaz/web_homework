@@ -1,0 +1,262 @@
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+.main_container {
+    background-color: #0A0B0A;
+    padding: 16px;
+}
+
+.title {
+    font-family: "Forum", serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #EFE7D2;
+    letter-spacing: 3px;
+    font-size: 130px;
+}
+
+.title_container {
+    position: absolute;
+    bottom: 8%;
+    left: 4%;
+}
+
+.main_banner {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.main_banner_shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+    pointer-events: none;
+}
+
+.banner_image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.banner_image:hover {
+    filter: brightness(0.9);
+    transform: scale(1.02);
+}
+
+
+.banner_image_sub_container {
+    height: calc((100dvh - 32px) / 3);
+    overflow: hidden;
+    border-radius: 16px;
+    position: relative;
+}
+
+.banner_image_container {
+    height: calc(100dvh - 32px);
+    overflow: hidden;
+    border-radius: 16px;
+    margin-right: 16px;
+    position: relative;
+}
+
+.gap-16px {
+    gap: 16px;
+}
+
+.social_media_container {
+    position: absolute;
+    bottom: 2%;
+    right: 3%;
+    display: flex;
+    gap: 10px;
+}
+
+.social_media_badge {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #32322D;
+    background-color: #181818;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social_media_badge:hover {
+    background-color: #32322D;
+}
+
+.social_media_icon {
+    width: 20px;
+}
+
+.banner_button {
+    a{
+        color: #EFE7D2;
+        text-decoration: none;
+        font-family: "Forum", serif;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 3px;
+        line-height: 35px;
+        font-size: 20px;
+        align-items: center;
+        display: flex;
+    }
+    text-decoration: none;
+    display: flex;
+    gap: 4px;
+    background-color: transparent;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    height: 100px;
+    justify-content: end;
+    align-items: self-end;
+    padding-right: 15px;
+}
+
+.banner_button:hover {
+    a{
+        color: #dcdbdb;
+    }
+}
+
+.banner_button_container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.ps-70px {
+    padding-left: 70px;
+}
+
+.navbar_container {
+    position: absolute;
+    top: 3%;
+    left: 0;
+    width: 100%;
+}
+
+.navbar_sub_container {
+    padding: 0 16px;
+    width: fit-content;
+}
+
+.navbar {
+    background-color: #0A0B0A;
+    border: none;
+    border-radius: 12px;
+    padding: 0;
+    color: #EFE7D2;
+}
+
+.custom-navbar-brand {
+    font-family: "Forum", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #EFE7D2 !important;
+    letter-spacing: 3px;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.custom-navbar-brand:hover {
+    color: #dcdbdb !important;
+}
+
+.custom-nav-link {
+    font-family: "Forum", serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #EFE7D2 !important;
+    letter-spacing: 3px;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 0 20px;
+    align-self: center;
+}
+
+.custom-nav-link:hover {
+    color: #dcdbdb !important;
+}
+
+.nav_button {
+    border: 1px solid #32322D;
+    background-color: #181818;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+.nav_button:hover {
+    background-color: #32322D;
+}
+
+.custom_navbar-toggler {
+    border: 1px solid #32322D !important;
+    background-color: #181818 !important;
+    color: #EFE7D2 !important;
+    border-radius: 6px !important;
+}
+
+.navbar-toggler-icon{
+    filter: brightness(0) saturate(100%) invert(90%) sepia(11%) saturate(697%) hue-rotate(331deg) brightness(109%) contrast(87%);
+}
+
+.navbar-nav{
+    row-gap: 13px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    height: fit-content;
+    align-self: center;
+}
+
+@media only screen and (max-width: 992px) {
+    .navbar_sub_container {
+        width: 100%;
+    }
+
+    .title{
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .banner_image_sub_container {
+        height: calc((100dvh - 32px) / 2);
+    }
+
+    .hide-mobile {
+        display: none;
+    }
+
+    .navbar_sub_container {
+        width: 100%;
+    }
+
+    .left_container {
+        padding-bottom: 16px;
+    }
+
+    .banner_image_container {
+        margin-right: 0;
+    }
+
+    .mobile_container {
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .hide-desktop {
+        display: none;
+    }
+}
