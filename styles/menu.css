@@ -55,7 +55,8 @@ body {
 }
 
 .title_line {
-    filter: brightness(0) saturate(100%) invert(14%) sepia(6%) saturate(497%) hue-rotate(21deg) brightness(99%) contrast(90%);}
+    filter: brightness(0) saturate(100%) invert(14%) sepia(6%) saturate(497%) hue-rotate(21deg) brightness(99%) contrast(90%);
+}
 
 .title_line_left{
     filter: brightness(0) saturate(100%) invert(14%) sepia(6%) saturate(497%) hue-rotate(21deg) brightness(99%) contrast(90%);    transform: rotate(180deg);
@@ -136,6 +137,16 @@ footer {
     margin: 16px;
     border: 1px solid #EFE7D226;
     border-radius: 16px;
+
+    p{
+        font-family: "Forum", serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #EFE7D2 !important;
+        letter-spacing: 3px;
+        font-size: 12px;
+
+    }
 }
 
 .navbar_container {
