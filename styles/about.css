@@ -181,6 +181,7 @@ p {
   background-color: #181818;
   padding: 5px;
   border-radius: 6px;
+  white-space: nowrap;
 }
 
 .nav_button:hover {
@@ -320,7 +321,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 991px) {
   .navbar_sub_container {
     width: 100%;
   }
