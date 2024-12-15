@@ -10,7 +10,7 @@ body {
     color: #fff !important;
     line-height: 1.6 !important;
     font-family: "Forum", serif !important;
-    background-image: url('/assets/menu_assets/bg.png') !important;
+    background-image: url('assets/menu_assets/bg.png') !important;
     background-size: contain !important;
     background-repeat: no-repeat !important;
     z-index: 0 !important;
