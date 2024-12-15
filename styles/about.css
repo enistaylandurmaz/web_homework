@@ -118,7 +118,7 @@ p {
 
 @media (max-width: 1024px) {
   .image-container {
-    height: 70vh; 
+    height: 98vh; 
   }
 
   .overlay-text {
@@ -126,19 +126,6 @@ p {
   }
 }
 
-@media (max-width: 768px) {
-  .image-container {
-    height: 60vh; 
-  }
-
-  .overlay-text {
-    font-size: 8vw; 
-  }
-
-  .box {
-    margin: 10px 0; 
-  }
-}
 
 @media (max-width: 480px) {
   .image-container {
