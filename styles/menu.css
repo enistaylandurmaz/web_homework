@@ -2,21 +2,36 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Forum", serif; 
+    font-family: "Forum", serif;
 }
 
 body {
-    background-color: #121212; 
-    color: #fff;
-    line-height: 1.6;
-    font-family: "Forum", serif;
-    background-image: url('/assets/menu_assets/bg.png');
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
+    background-color: #0A0B0A !important;
+    color: #fff !important;
+    line-height: 1.6 !important;
+    font-family: "Forum", serif !important;
+    background-image: url('../assets/menu_assets/bg.png') !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    z-index: 0 !important;
 }
 
-
+.main_container{
+    margin: 16px;
+    border: 1px solid #EFE7D226;
+    border-radius: 16px;
+    position: relative;
+}
+.bg_shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 99dvw;
+    height: 100dvh;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+    pointer-events: none;
+    z-index: 0  ;
+}
 /* Menu */
 .menu-section {
     margin: 3rem auto;
@@ -25,18 +40,32 @@ body {
 }
 
 .menu-section h2 {
-    font-family: Forum; 
+    font-family: Forum;
     text-align: center;
     font-size: 2rem;
-    margin-bottom: 2rem;
-    border-bottom: 2px solid #444;
-    padding-bottom: 0.5rem;
+    color: #EFE7D2;
+    margin: 0;
+}
+.title_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.title_line {
+    filter: brightness(0) saturate(100%) invert(14%) sepia(6%) saturate(497%) hue-rotate(21deg) brightness(99%) contrast(90%);
+}
+
+.title_line_left{
+    filter: brightness(0) saturate(100%) invert(14%) sepia(6%) saturate(497%) hue-rotate(21deg) brightness(99%) contrast(90%);    transform: rotate(180deg);
 }
 
 .menu-items {
     display: flex;
-    flex-direction: column; 
-    gap: 1.5rem; 
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
 .menu-item {
@@ -45,7 +74,6 @@ body {
     display: flex;
     align-items: center;
     padding: 1rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 .menu-item img {
@@ -59,26 +87,199 @@ body {
 .menu-item h3 {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
+    color: #EFE7D2;
+    white-space: nowrap;
+    overflow: hidden;
+    flex-shrink: 1;
 }
 
 .menu-item p {
-    font-size: 0.9rem;
-    font-family: "Forum", sans-serif; 
-    color: #aaa;
+    font-family: Satoshi, sans-serif;
+    font-size: 14px;
+    color: #F5F2EAB2;
+    font-weight: 300;
+    line-height: 21px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    width: 60%;
+}
+
+.menu-item h3:after {
+    color: #EFE7D2;
+    opacity: 0.3;
+    content: " ................................................................................................................................................................................................................................................................"
+}
+
+.description {
+    overflow: hidden;
 }
 
 .price {
-    font-size: 1.1rem;
-    font-weight:lighter;
-    color: #ffffffe8;
+    font-family: Forum, serif;
+    font-weight: 400;
+    line-height: 26.4px;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #EFE7D2;
     margin-left: auto;
-    margin-bottom: 2.5rem;
+    flex-shrink: 0;
+    align-self: start;
+    margin-top: 10px;
 }
+
 
 
 footer {
     text-align: center;
     padding: 1rem 0;
-    background: #000;
     font-size: 0.9rem;
+    margin: 16px;
+    border: 1px solid #EFE7D226;
+    border-radius: 16px;
+
+    p{
+        font-family: "Forum", serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #EFE7D2 !important;
+        letter-spacing: 3px;
+        font-size: 12px;
+
+    }
+}
+
+.navbar_container {
+    top: 3%;
+    left: 0;
+    width: 100%;
+}
+
+.navbar_sub_container {
+    padding: 0 16px;
+    width: fit-content;
+}
+
+.navbar {
+    background-color: #0A0B0A;
+    border: none;
+    border-radius: 12px;
+    padding: 0;
+    color: #EFE7D2;
+}
+
+.custom-navbar-brand {
+    font-family: "Forum", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #EFE7D2 !important;
+    letter-spacing: 3px;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.custom-navbar-brand:hover {
+    color: #dcdbdb !important;
+}
+
+.custom-nav-link {
+    font-family: "Forum", serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #EFE7D2 !important;
+    letter-spacing: 3px;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 0 20px;
+    align-self: center;
+}
+
+.custom-nav-link:hover {
+    color: #dcdbdb !important;
+}
+
+.nav_button {
+    border: 1px solid #32322D;
+    background-color: #181818;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+.nav_button:hover {
+    background-color: #32322D;
+}
+
+.custom_navbar-toggler {
+    border: 1px solid #32322D !important;
+    background-color: #181818 !important;
+    color: #EFE7D2 !important;
+    border-radius: 6px !important;
+}
+
+.navbar-toggler-icon{
+    filter: brightness(0) saturate(100%) invert(90%) sepia(11%) saturate(697%) hue-rotate(331deg) brightness(109%) contrast(87%);
+}
+
+.navbar-nav{
+    row-gap: 13px;
+}
+
+@media only screen and (max-width: 992px) {
+    .navbar_sub_container {
+        width: 100%;
+    }
+
+    .menu-section {
+        margin: 0;
+        padding: 0 10px;
+    }
+
+    .menu-item {
+        padding: 0.1rem;
+        align-items: start;
+    }
+
+    .menu-item img {
+        width: 75px;
+        height: 50px;
+        border-radius: 20%;
+        margin-right: 1rem;
+        object-fit: cover;
+    }
+
+    .menu-section h2 {
+        font-size: 1.2rem;
+    }
+
+    .menu-item h3 {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+        color: #EFE7D2;
+        white-space: nowrap;
+        overflow: hidden;
+        flex-shrink: 1;
+    }
+
+    .menu-item p {
+        font-family: Satoshi, sans-serif;
+        font-size: 10px;
+        color: #F5F2EAB2;
+        font-weight: 300;
+        line-height: 21px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        width: 100%;
+    }
+
+    .price {
+        margin: 0;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar_sub_container {
+        width: 100%;
+    }
 }
