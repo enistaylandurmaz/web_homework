@@ -33,6 +33,7 @@ body {
     min-height: 100dvh;
     background: url('../assets/reservation_assets/background.png') no-repeat center center;
     overflow: hidden;
+    background-size: cover;
 }
 
 .image-wrapper {

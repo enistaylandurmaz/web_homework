@@ -1,0 +1,188 @@
+@import "assets/fonts/Satoshi_Complete/Fonts/WEB/css/satoshi.css";
+
+.row {
+    margin: 0;
+}
+
+.main-wrapper {
+    width: 100%;
+    min-height: 100dvh;
+    background: url('../assets/reservation_assets/background.png') no-repeat center center;
+    overflow: hidden;
+    background-size: cover;
+}
+
+.gray-border {
+    border: 1px solid #EFE7D226;
+}
+
+.radius-16 {
+    border-radius: 16px;
+}
+
+.hour_title_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.title_line {
+    filter: brightness(0) saturate(100%) invert(14%) sepia(6%) saturate(497%) hue-rotate(21deg) brightness(99%) contrast(90%);
+}
+
+.title_line_left {
+    filter: brightness(0) saturate(100%) invert(14%) sepia(6%) saturate(497%) hue-rotate(21deg) brightness(99%) contrast(90%);
+    transform: rotate(180deg);
+}
+
+.hour_title {
+    color: #EFE7D2;
+    font-family: Forum, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.8px;
+    letter-spacing: 1px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin: 0;
+}
+
+.opening_hours {
+    margin-bottom: 0.5rem;
+    color: #EFE7D2;
+    white-space: nowrap;
+    overflow: hidden;
+    flex-shrink: 1;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28.8px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.hours {
+    margin-bottom: 0.5rem;
+    color: #EFE7D2;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28.8px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+
+}
+
+.opening_hours:after {
+    color: #EFE7D2;
+    opacity: 0.3;
+    content: " ................................................................................................................................................................................................................................................................"
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    border: 1px solid #EFE7D226;
+    border-radius: 16px;
+
+    p {
+        font-family: "Forum", serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #EFE7D2 !important;
+        letter-spacing: 3px;
+        font-size: 12px;
+
+    }
+}
+
+.food_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+    padding: 10px;
+}
+
+.title_container{
+    bottom: 2% !important;
+}
+
+
+.food_shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+    pointer-events: none;
+}
+
+.get_in_touch_title {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28.8px;
+    text-align: right;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #EFE7D2;
+}
+
+.p-16 {
+    padding: 16px !important;
+}
+
+.pr-8 {
+    padding-right: 8px !important;
+}
+
+.pl-8 {
+    padding-left: 8px !important;
+}
+
+.pt-8 {
+    padding-top: 16px !important;
+}
+
+.pb-16 {
+    padding-bottom: 16px !important;
+}
+
+.card_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem;
+    width: 100%;
+    height: 100%;
+}
+
+.banner_image_container{
+    height: 100% !important;
+}
+
+@media only screen and (max-width: 767px) {
+    .no_padding_mobile {
+        padding: 0 !important;
+    }
+
+    .mb-16-mobile {
+        margin-bottom: 16px !important;
+    }
+
+    .hour_title {
+        font-size: 22px;
+        line-height: 25px;
+    }
+
+    .card_container {
+        padding: 4rem 2rem;
+    }
+}
